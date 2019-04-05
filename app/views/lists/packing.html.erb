@@ -1,0 +1,14 @@
+<h1>Packing List </h1>
+
+<table>
+    <tr>
+        <th>Item</th>
+        <th>Qty</th>
+    </tr>
+<% for item, qty in @clothes %>
+    <tr>
+        <td><%= item%></td>
+        <td><%= qty %></td>
+    </tr>
+<% end %>
+</table>

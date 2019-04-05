@@ -15,7 +15,11 @@ class ListsController < ApplicationController
         # render plain: @list.inspect
     end
 
-    # def packing
-    #     @clothes = {"Tee Shirts" => 3, "Pants" => 2, "Jackets" => 2, "Socks" => 12}
-    # end
+    def packing
+        @clothes = {
+            "T-Shirts" => 3, 
+            "Pants" => 2, 
+            "Jackets" => 2, 
+            "Socks" => 12}
+    end
 end
