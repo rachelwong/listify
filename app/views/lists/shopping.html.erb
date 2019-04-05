@@ -1,5 +1,17 @@
-<h1>Shopping page </h1>
+<h1>Shopping List </h1>
 
-<% @groceries.each do |item| %>
+<table>
+    <tr>
+        <th>Item</th>
+        <th>Qty</th>
+    </tr>
+<% for item, qty in @groceries %>
+    <tr>
+        <td><%= item%></td>
+        <td><%= qty %></td>
+    </tr>
+<% end %>
+<!--<% @groceries.each do |item| %>
    <%= item%>
-<%end%>
+<%end%>-->
+</table>
